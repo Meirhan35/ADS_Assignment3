@@ -1,16 +1,7 @@
 import java.util.Random;
 
-/**
- * Sorter class handles all sorting operations.
- * Implements Bubble Sort (basic) and Merge Sort (advanced).
- */
-public class Sorter {
+class Sorter {
 
-    /**
-     * Basic Sort: Bubble Sort
-     * Repeatedly compares adjacent elements and swaps them if they are in the wrong order.
-     * Time Complexity: O(n^2)
-     */
     public void basicSort(int[] arr) {
         int n = arr.length;
         for (int i = 0; i < n - 1; i++) {
@@ -24,12 +15,6 @@ public class Sorter {
         }
     }
 
-    /**
-     * Advanced Sort: Merge Sort
-     * Recursively divides the array in half, sorts each half,
-     * then merges the two sorted halves back together.
-     * Time Complexity: O(n log n)
-     */
     public void advancedSort(int[] arr) {
         if (arr == null || arr.length <= 1) return;
         mergeSort(arr, 0, arr.length - 1);
@@ -63,7 +48,6 @@ public class Sorter {
         while (j < n2) arr[k++] = rightArr[j++];
     }
 
-    /** Prints all elements of an array on a single line. */
     public void printArray(int[] arr) {
         System.out.print("[");
         for (int i = 0; i < arr.length; i++) {
@@ -73,7 +57,6 @@ public class Sorter {
         System.out.println("]");
     }
 
-    /** Generates an array of the given size filled with random integers (0-9999). */
     public int[] generateRandomArray(int size) {
         Random rand = new Random();
         int[] arr = new int[size];

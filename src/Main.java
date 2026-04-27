@@ -1,19 +1,13 @@
 import java.util.Arrays;
 
-/**
- * Main entry point for the Sorting and Searching Algorithm Analysis System.
- * Demonstrates Bubble Sort, Merge Sort, and Binary Search.
- */
 public class Main {
 
     public static void main(String[] args) {
 
-        // ── Instantiate core classes ──────────────────────────────────────
         Sorter     sorter     = new Sorter();
         Searcher   searcher   = new Searcher();
         Experiment experiment = new Experiment(sorter, searcher);
 
-        // ── Demo section: small array walkthrough ─────────────────────────
         System.out.println("=".repeat(60));
         System.out.println("          ALGORITHM DEMO — Small Array (10 elements)");
         System.out.println("=".repeat(60));
@@ -23,19 +17,16 @@ public class Main {
         System.out.print("\nOriginal array : ");
         sorter.printArray(small);
 
-        // Bubble Sort demo
         int[] bubbleCopy = small.clone();
         sorter.basicSort(bubbleCopy);
         System.out.print("After Bubble Sort : ");
         sorter.printArray(bubbleCopy);
 
-        // Merge Sort demo
         int[] mergeCopy = small.clone();
         sorter.advancedSort(mergeCopy);
         System.out.print("After Merge Sort  : ");
         sorter.printArray(mergeCopy);
 
-        // Binary Search demo
         int target = small[0];
         int resultIndex = searcher.search(small, target);
         System.out.println("\nBinary Search for value " + target + ":");
@@ -45,7 +36,6 @@ public class Main {
             System.out.println("  Value not found.");
         }
 
-        // ── Medium array demo ─────────────────────────────────────────────
         System.out.println("\n" + "=".repeat(60));
         System.out.println("          ALGORITHM DEMO — Medium Array (100 elements)");
         System.out.println("=".repeat(60));
@@ -71,7 +61,6 @@ public class Main {
         long t6 = System.nanoTime();
         System.out.println("Binary Search completed in " + (t6 - t5) + " ns.");
 
-        // ── Sorted array demo ─────────────────────────────────────────────
         System.out.println("\n" + "=".repeat(60));
         System.out.println("     ALGORITHM DEMO — Pre-Sorted Array (100 elements)");
         System.out.println("=".repeat(60));
@@ -92,7 +81,6 @@ public class Main {
         long s4 = System.nanoTime();
         System.out.println("Merge Sort  on sorted array: " + (s4 - s3) + " ns.");
 
-        // ── Full experiment table ─────────────────────────────────────────
         System.out.println();
         experiment.runAllExperiments();
     }
