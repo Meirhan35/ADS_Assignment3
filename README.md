@@ -51,11 +51,10 @@ Large (1000) - ~7,200,000 - ~310,000 - ~14,000
 
 ### Pre-Sorted Arrays
 
-| Size | Bubble Sort (ns) | Merge Sort (ns) | Binary Search (ns) |
-|---|---|---|---|
-| Small (10) | ~1,200 | ~4,800 | ~2,800 |
-| Medium (100) | ~12,000 | ~19,000 | ~7,600 |
-| Large (1000) | ~950,000 | ~220,000 | ~11,000 |
+Size - Bubble Sort (ns) - Merge Sort (ns) - Binary Search (ns)
+Small (10) - ~1,200 - ~4,800 - ~2,800
+Medium (100) - ~12,000 - ~19,000 - ~7,600
+Large (1000) - ~950,000 - ~220,000 - ~11,000
 
 ---
 
