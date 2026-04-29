@@ -39,8 +39,8 @@ Binary Search works on a **sorted** array. It compares the target value to the m
 
 ## C. Experimental Results
 
-> Times are measured in nanoseconds (ns) using `System.nanoTime()`.  
-> Sample results from a typical run:
+Times are measured in nanoseconds (ns) using `System.nanoTime()`.
+Sample results from a typical run:
 
 ### Random Arrays
 
