@@ -44,8 +44,7 @@ Binary Search works on a **sorted** array. It compares the target value to the m
 
 ### Random Arrays
 
-| Size | Bubble Sort (ns) | Merge Sort (ns) | Binary Search (ns) |
-|---|---|---|---|
+| Size | Bubble Sort (ns) | Merge Sort (ns) | Binary Search (ns)
 | Small (10) | ~4,500 | ~6,200 | ~3,100 |
 | Medium (100) | ~85,000 | ~28,000 | ~9,400 |
 | Large (1000) | ~7,200,000 | ~310,000 | ~14,000 |
