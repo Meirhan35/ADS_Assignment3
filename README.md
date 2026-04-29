@@ -18,8 +18,8 @@ B. Algorithm Descriptions
 1. Bubble Sort (Basic Sort)
 Bubble Sort works by repeatedly stepping through the array and comparing each pair of adjacent elements. If they are in the wrong order, they are swapped. This process is repeated until no swaps are needed.
 
-Best Case:** O(n) — already sorted
-Average/Worst Case:** O(n²)
+Best Case: O(n) — already sorted
+Average/Worst Case: O(n²)
 Space: O(1)
 
 2. Merge Sort (Advanced Sort)
