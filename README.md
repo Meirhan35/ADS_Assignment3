@@ -4,11 +4,10 @@
 
 This project implements and compares three classic algorithms in Java:
 
-| Category | Algorithm | Complexity |
-|---|---|---|
-| Basic Sort | Bubble Sort | O(n²) |
-| Advanced Sort | Merge Sort | O(n log n) |
-| Searching | Binary Search | O(log n) |
+Category-Algorithm-Complexity
+Basic-Sort Bubble Sort-O(n²)
+Advanced Sort-Merge Sort-O(n log n)
+Searching-Binary Search-O(log n)
 
 The goal is to measure and analyze how each algorithm performs on arrays of different sizes (small, medium, large) and different input types (random vs pre-sorted), and to verify whether real-world results match expected Big-O complexity.
 
